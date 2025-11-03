@@ -1,0 +1,129 @@
+.footer {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.footer__top {
+    margin-top: 100px;
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 173px 289px 1fr;
+    gap: 159.9px;
+    border-radius: 24px;
+    background: #F4F8FC;
+}
+
+.footer__top__images__map {
+    margin-top: 24px;
+}
+
+.footer__top__navigation {
+    display: flex;
+}
+
+.footer__top__navigation__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__top__navigation__list:last-of-type {
+    margin-left: 64px;
+}
+
+.footer__top__navigation__list__element {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    color: #373737;
+}
+
+.footer__top__navigation__list:first-of-type .footer__top__navigation__list__element:first-of-type {
+    margin-bottom: 41px;
+}
+
+.footer__top__navigation__list:first-of-type .footer__top__navigation__list__element:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top__navigation__list:last-of-type .footer__top__navigation__list__element {
+    margin-bottom: 16px;
+}
+
+.footer__top__navigation__list__element__link {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    text-decoration: none;
+    color: #373737;
+    margin-bottom: 8px;
+}
+
+.footer__top__navigation__list__element__link:first-child {
+    margin-top: 10px;
+}
+
+.footer__top__contacts__buttons {
+    display: flex;
+}
+
+.footer__top__contacts__buttons__icons {
+    margin: 9.5px 0 9.5px 39px;
+    width: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top__contacts__list {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.footer__top__contacts__list__element {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.footer__top__contacts__list__element:last-child {
+    margin-bottom: 0;
+}
+
+.footer__top__contacts__list__element__title {
+    width: 70px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 16px;
+    color: #506F88;
+}
+
+.footer__top__contacts__list__element__detail {
+    color: #373737;
+}
+
+.footer__bottom {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    padding-left: 48px;
+    align-items: center;
+    gap: 127.33px;
+    height: 69px;
+    background: #F4F8FC;  
+    border-radius: 24px;
+}
+
+.footer__bottom__copyright {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__bottom__copyright__link {
+    color: #02567A;
+}
