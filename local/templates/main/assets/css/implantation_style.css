@@ -1,0 +1,138 @@
+.section__implantation {
+    margin: 100px auto 0 auto;
+    max-width: 1312px;
+    display: grid;
+    grid-template-columns: 952px 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.section__implantation:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.section__implantation:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.section__implantation__info {
+    display: flex;
+    gap: 46px;
+    box-sizing: border-box;
+    padding: 24px 80px 29px 65.46px;
+    background: #F4F8FC;
+    border-radius: 24px;
+}
+
+.section__implantation__info__title {
+    margin-top: 24px;
+    color: #373737;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+}
+
+.section__implantation__info__description {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    color: #373737;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -3%;
+}
+
+.section__implantation__info__button {
+    padding: 12px 67px;
+    border: 1px solid #026994;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    color: #026994;
+    background: none;
+    border-radius: 16px;
+    display: flex;
+}
+
+.section__implantation__info__button:hover {
+    color: #FFFFFF;
+    background: #026994;
+    cursor: pointer;
+}
+
+.section__implantation__info__button__arrow {
+    width: 7.36px;
+    height: 12.72px;
+    background-image: url("/local/templates/main/assets/img/button_arrow_right.svg");
+    margin-left: 18.5px;
+    margin-top: 7px;
+}
+
+.section__implantation__info__button:hover .section__implantation__info__button__arrow {
+    background-image: url("/local/templates/main/assets/img/button_arrow.svg");
+}
+
+.section__implantation__implants {
+    background: #026994;
+    border-radius: 24px;
+    padding: 48px 48px 0 48px;
+}
+
+.section__implantation__implants__title {
+    color: #F4F8FC;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 56px;
+}
+
+.section__implantation__implants__description {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+}
+
+.section__implantation__guarantee {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px 64px;
+    background: #02567A;
+    border-radius: 24px;
+    justify-content: space-between;
+}
+
+.section__implantation__guarantee__container {
+    display: flex;
+}
+
+.section__implantation__guarantee__title {
+    margin-top: 19px;
+    margin-left: 31px;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 110%;
+}
+
+.section__implantation__guarantee__description {
+    margin-top: 9px;
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    max-width: 396px;
+}

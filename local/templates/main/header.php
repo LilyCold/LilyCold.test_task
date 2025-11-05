@@ -14,6 +14,15 @@ use Bitrix\Main\Page\Asset
 		<?php 
 			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/header_style.css");
 			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/footer_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/cover_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/promotion_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/services_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/about_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/implantation_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/specialists_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/reviews_style.css");
+			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/news_style.css");
+
 			Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/scripts/burgerMenuShowScript.js");
 
 			Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.googleapis.com">');
@@ -92,7 +101,15 @@ use Bitrix\Main\Page\Asset
 					<img class="main__button_icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow.svg" alt="">
 				</button>
 			</section>
-			
+
+			<div class="fixed-buttons-container">
+				<button class="fixed-button">
+					<img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/360-view.svg" alt="3D просмотр">
+				</button>
+				<button class="fixed-button">
+					<img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/phone.svg" alt="Телефон">
+				</button>
+			</div>
 		</header>
 		
 

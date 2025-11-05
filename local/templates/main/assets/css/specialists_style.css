@@ -1,0 +1,81 @@
+.section__specialists {
+    margin: 100px auto 0 auto;
+    max-width: 1312px;
+}
+
+.section__specialists__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__specialists__info__container {
+    max-width: 871px;
+}
+
+.section__specialists__info__title {
+    color: #373737;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+}
+
+.section__specialists__info__description {
+    margin-top: 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #373737;
+}
+
+#button__specialists {
+    margin-top: 77px;
+}
+
+#specialists__list {
+    margin-top: 40px;
+}
+
+#specialists__list__element {
+    background: #F4F8FC;
+}
+
+#specialists__list__element:hover {
+    background: #E6F0F8;
+    cursor: pointer;
+}
+
+#specialists__list__element__title {
+    max-width: 230px;
+}
+
+#section__specialists__buttons {
+    margin: 24px auto 0 auto;
+    gap: 24px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #E6F0F8;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-dot.active {
+    background: #026994;
+}
+
+.slider-dot:hover {
+    background: #026994;
+}

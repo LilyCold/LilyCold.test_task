@@ -1,0 +1,111 @@
+.section__promotion {
+    max-width: 1312px;
+    margin: 100px auto 0 auto;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 48px;
+    background: #F4F8FC;
+    display: grid;
+    grid-template-columns: 351px 1fr;
+    gap: 45px;
+}
+
+.section__promotion__title {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    color: #373737;
+}
+
+.section__promotion__description {
+    margin-top: 40px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    color: #373737;
+}
+
+.section__promotion__image {
+    margin-top: 61px;
+}
+
+.section__promotion__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__promotion__list__container {
+    display: flex;
+    gap: 20px;
+}
+
+.section__promotion__list__element {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.section__promotion__list__element:hover {
+    background: #E6F0F8;
+}
+
+.section__promotion__list__element__image {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: block; 
+    margin-bottom: 24px;
+}
+
+.section__promotion__list__element__title {
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 290px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    color: #373737;
+}
+
+.section__promotion__list__element__description {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 36px;
+}
+
+.section__promotion__list__element__link {
+    margin-left: 24px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    color: #02567A;
+}
+
+.section__promotion__buttons__container {
+    margin-top: 24px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    gap: 8px;
+}
+
+.button__arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 32px;
+    border: none;
+    display: block; 
+    background: #FFFFFF;
+}
+
+.button__arrow:hover {
+    background: #E6F0F8;
+}

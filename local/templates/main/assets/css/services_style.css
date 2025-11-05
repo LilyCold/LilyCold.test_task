@@ -1,0 +1,124 @@
+.section__services {
+    margin: 100px auto 0 auto;
+    max-width: 1312px;
+}
+
+.section__services__info {
+    display: flex;
+}
+
+.section__services__info__title {
+    max-width: 635px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    color: #373737;
+}
+
+.color_blue {
+    color: #026994;
+}
+
+.section__services__info__description {
+    width: 730px;
+    margin-top: 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.button_second {
+    margin-left: auto;
+    margin-top: auto;
+    width: 268px;
+    height: 60px;
+    padding: 16.5px 34.64px 16.5px 26.5px;
+    border: 1px solid #026994;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    color: #026994;
+    background: none;
+    border-radius: 16px;
+    display: flex;
+}
+
+.button_second:hover {
+    color: #FFFFFF;
+    background: #026994;
+    cursor: pointer;
+}
+
+.button_second__arrow {
+    width: 7.36px;
+    height: 12.72px;
+    background-image: url("/local/templates/main/assets/img/button_arrow_right.svg");
+    margin-left: 18.5px;
+    margin-top: 7px;
+}
+
+.button_second:hover .button_second__arrow {
+    background-image: url("/local/templates/main/assets/img/button_arrow.svg");
+}
+
+.section__services__list {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.section__services__list__first {
+    width: 552px;
+    height: 552px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.section__services__list__first__description {
+    margin-top: 364px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.section__services__list__first__title {
+    margin-top: 24px;
+    box-sizing: border-box;
+    padding: 16px 40px;
+    background: #02567A66;
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.section__services__list__element {
+    width: 170px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.section__services__list__element__title {
+    height: 504px;
+    box-sizing: border-box;
+    padding: 40px 16px;
+    background: #02567A66;
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    
+    writing-mode: vertical-lr;
+    transform: scaleY(-1) scaleX(-1);
+}
