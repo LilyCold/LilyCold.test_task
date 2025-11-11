@@ -15,16 +15,6 @@ $this->setFrameMode(true);
 
 <?php if (!empty($arResult["ITEMS"])): ?>
 	<section class="section__services">
-		<section class="section__services__info">
-			<div class="section__services__info__container">
-				<h1 class="section__services__info__title">Все <span class="color_blue">необходимые услуги</span> в одном месте</h1>
-				<p class="section__services__info__description">В нашей стоматологической клинике мы предлагаем широкий спектр услуг, чтобы удовлетворить все ваши потребности в уходе за зубами и полостью рта. </p>
-			</div>
-			<button class="button_second">Смотреть все услуги
-				<div class="button_second__arrow" alt=""></div>
-			</button>
-		</section>
-
 		<?php 
 		// Берем первый элемент из массива
 		$firstItem = reset($arResult["ITEMS"]);

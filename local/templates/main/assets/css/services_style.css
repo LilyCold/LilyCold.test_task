@@ -1,7 +1,12 @@
 .section__services {
-    margin: 100px auto 0 auto;
+    margin: 40px auto 0 auto;
     max-width: 1312px;
     box-sizing: border-box;
+}
+
+.section__description {
+    margin: 100px auto 0 auto;
+    max-width: 1312px;
 }
 
 .section__services__info {

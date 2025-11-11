@@ -1,0 +1,1 @@
+				<h6 class="section__specialists__info__title">Наши <span class="color_blue">специалисты</span></h6>

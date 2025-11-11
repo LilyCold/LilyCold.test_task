@@ -16,17 +16,7 @@ $this->setFrameMode(true);
 
 <?php if (!empty($arResult["ITEMS"])): ?>
     <section class="section__specialists">
-        <section class="section__specialists__info">
-			<div class="section__specialists__info__container">
-				<h6 class="section__specialists__info__title">Наши <span class="color_blue">специалисты</span></h6>
-            	<p class="section__specialists__info__description">В нашей стоматологической клинике работает команда высококвалифицированных специалистов, каждый из которых обладает богатым опытом и глубокими знаниями в своей области. </p>
-			</div>
-			<button class="section__implantation__info__button" id="button__specialists">Подробнее
-				<div class="section__implantation__info__button__arrow" alt=""></div>
-			</button>
-        </section>
-
-        <section class="section__specialists__list">
+            <section class="section__specialists__list">
             <div class="section__specialists__list__container specialists-slider-container">
                 <?php foreach($arResult["ITEMS"] as $arItem): ?>
                     <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>

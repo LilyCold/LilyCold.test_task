@@ -15,15 +15,6 @@ $this->setFrameMode(true);
 
 <?php if (!empty($arResult["ITEMS"])): ?>
     <section class="section__reviews">
-        <section class="section__reviews__info">
-			<div class="section__reviews__info__container">
-				<h6 class="section__promotion__title">Отзывы</h6>
-				<p class="section__promotion__description">В этом разделе вы найдете мнения и впечатления наших клиентов о предоставляемых услугах.<br>Мы ценим каждое ваше мнение, так как оно помогает нам становиться лучше.</p>
-			</div>
-			<button class="button_second" id="button_reviews">Смотреть все
-				<div class="button_second__arrow" alt=""></div>
-			</button>
-        </section>
 
         <section class="section__promotion__list" id="reviews__list">
             <div class="section__promotion__list__container" id="reviews__list__container">

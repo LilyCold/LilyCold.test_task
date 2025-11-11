@@ -25,12 +25,16 @@ $iconMap = [
 
 <?php if (!empty($arResult["ITEMS"])): ?>
     <section class="section__about">
-        <section class="section__about__head">
-            <h6 class="section__about__head__title">О клинике</h6>
-			<button class="section__about__head__button">Подробнее о клинике
-				<div class="section__about__head__button__arrow" alt=""></div>
-			</button>
-        </section>
+            <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            array(
+                "AREA_FILE_SHOW" => "file",
+                "PATH" => "/include/about_head.php",
+                "EDIT_TEMPLATE" => ""
+            ),
+            false
+        );?>
 
         <section class="section__about__list">
             <?php foreach($arResult["ITEMS"] as $arItem): ?>

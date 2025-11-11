@@ -39,77 +39,28 @@ use Bitrix\Main\Page\Asset
 			<?$APPLICATION->ShowPanel();?>
 		</div>
 		<header class="header">
-			<section class="header__contacts">
-				<img class="contacts__logo" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" alt="">
-				<ul class="contacts__list">
-					<li class="list__element"> 
-						<h6 class="list__element__title">Адрес:</h6>
-						<div class="list__element__container">
-							<p class="list__element__detail">Ул. Красный Путь, 70</p>
-							<p class="list__element__detail">Ул. Жукова, 78</p>
-						</div>
-					</li>
-					<li class="list__element">
-						<h6 class="list__element__title">Режим:</h6>
-						<div class="list__element__container">
-							<p class="list__element__detail">Пн-Сб — 08:00-20:00</p>
-							<p class="list__element__detail">Вс — 09:00-18:00</p>
-						</div>
-					</li>
-					<li class="list__element list__element--column">
-						<div class="list__element__group">
-							<h6 class="list__element__title">Телефон:</h6>
-							<p class="list__element__detail">+7 (3812) 47-55-74</p>
-						</div>
-						<div class="list__element__group">
-							<h6 class="list__element__title">Почта:</h6>
-							<p class="list__element__detail">stomolimp55@mail.ru</p>
-						</div>
-					</li>
-				</ul>
-				<img class="contacts__iconRAD" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/RussianDentalAssociationIcon.svg" alt="">
-				<p class="contacts__signature">Стоматологическая ассоциация России</p>
-				<img class="contacts__iconVisualyImpaired" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/VisuallyImpairedIcon.svg" alt="">
-			</section>
-			<section class="header__menu">
-				<button class="mobile-menu-toggle" style="display: none;">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-				<nav class="header__menu__navigation">
-					<a class="header__menu__navigation__link" href="#">Главная</a>
-					<a class="header__menu__navigation__link" href="#">О нас
-						<img class="header__menu__navigation__link__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/weui_arrow-filled.svg" alt="">
-					</a>
-						<ul class="header__menu__navigation__burger">
-							<li class="header__menu__navigation__burger__element">
-								<a class="header__menu__navigation__burger__element__link" href="#">Специалисты</a>
-							</li>
-							<li class="header__menu__navigation__burger__element">
-								<a class="header__menu__navigation__burger__element__link" href="#">Отзывы</a>
-							</li>
-							<li class="header__menu__navigation__burger__element">
-								<a class="header__menu__navigation__burger__element__link" href="#">Документы</a>
-							</li>
-						</ul>
-					<a class="header__menu__navigation__link" href="#">Услуги</a>
-					<a class="header__menu__navigation__link" href="#">Цены</a>
-					<a class="header__menu__navigation__link" href="#">Калькулятор</a>
-					<a class="header__menu__navigation__link" href="#">Акции</a>
-					<a class="header__menu__navigation__link" href="#">Новости</a>
-					<a class="header__menu__navigation__link" href="#">Контакты</a>
-					<a class="header__menu__navigation__link" href="#">Вакансии</a>
-				</nav>
-				<div class="header__menu__icons">
-					<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ph_telegram-logo.svg" alt="">
-					<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ic_baseline-whatsapp.svg" alt="">
-				</div>
-				<button class="main__button">
-					Запись на прием
-					<img class="main__button_icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow.svg" alt="">
-				</button>
-			</section>
+
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/include/header_contacts.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false
+			);?>
+
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				array(
+					"AREA_FILE_SHOW" => "file",
+					"PATH" => "/include/header_menu.php",
+					"EDIT_TEMPLATE" => ""
+				),
+				false
+			);?>
 
 			<div class="fixed-buttons-container">
 				<button class="fixed-button">

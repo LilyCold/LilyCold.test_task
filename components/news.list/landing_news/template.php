@@ -14,18 +14,8 @@ $this->setFrameMode(true);
 ?>
 
 <?php if (!empty($arResult["ITEMS"])): ?>
-    <section class="section__specialists">
-        <section class="section__specialists__info">
-			<div class="section__specialists__info__container">
-				<h6 class="section__specialists__info__title">Новости</h6>
-            	<p class="section__specialists__info__description">В нашем разделе "Новости" мы делимся актуальной информацией о нашей клинике, новых<br>услугах и мероприятиях. Следите за обновлениями, чтобы не пропустить важные события!</p>
-			</div>
-			<button class="section__implantation__info__button">Смотреть все
-				<div class="section__implantation__info__button__arrow" alt="">
-            </button>
-        </section>
-
-        <section class="section__news__list">
+    	<section class="section__specialists">
+            <section class="section__news__list">
             <div class="section__news__list__container">
                 <?php foreach($arResult["ITEMS"] as $arItem): ?>
                     <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
@@ -38,6 +28,6 @@ $this->setFrameMode(true);
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
+            </section>
         </section>
-    </section>
 <?php endif; ?>
