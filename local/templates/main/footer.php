@@ -3,27 +3,6 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 ?>
 
-
-	<section class="section__form">
-		<div class="section__form__container">
-			<h3 class="section__form__title">Запишитесь на консультацию</h3>
-			<input class="section__form__input" type="text" name="username" placeholder="Как вас зовут">
-			<input class="section__form__input" type="tel" name="phone" placeholder="Ваш телефон">
-			<textarea class="section__form__textarea" name="message" placeholder="Комментарий (не обязательно)"></textarea>
-			<label class="section__form__checkbox">
-				<input type="checkbox"> 
-				<span class="checkmark"></span>
-				Нажимая на кнопку, вы даете согласие на обработку<br> 
-				персональных данных и соглашаетесь c политикой конфиденциальности.
-			</label>
-
-			<button class="button_second" id="white__button">Записаться
-				<div class="button_second__arrow" alt=""></div>
-			</button>
-		</div>
-		<img class="form__banner" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/Image.png" alt="">
-	</section>
-
 	<footer class="footer">
 		<section class="footer__top">
 			<div class="footer__top__images">

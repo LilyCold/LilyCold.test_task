@@ -7,12 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   if (aboutLink && burgerMenu) {
-    // Показываем меню при наведении
     aboutLink.addEventListener("mouseenter", function () {
       burgerMenu.classList.add("show");
     });
 
-    // Скрываем меню когда курсор уходит с ссылки или меню
     aboutLink.addEventListener("mouseleave", function () {
       setTimeout(() => {
         if (!burgerMenu.matches(":hover")) {
@@ -21,12 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 100);
     });
 
-    // Скрываем меню когда курсор уходит с меню
     burgerMenu.addEventListener("mouseleave", function () {
       burgerMenu.classList.remove("show");
     });
 
-    // Показываем меню когда курсор на меню (для плавности)
     burgerMenu.addEventListener("mouseenter", function () {
       burgerMenu.classList.add("show");
     });

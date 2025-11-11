@@ -1,25 +1,40 @@
 .section__cover {
     margin: 0 auto;
-    padding: 309px 692px 68px 64px;
+    padding: clamp(80px, 25vw, 309px) clamp(16px, 45vw, 692px) clamp(24px, 5vw, 68px) clamp(24px, 5vw, 64px);
     background-size: cover;
     background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 24px;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    position: relative;
+    min-height: clamp(250px, 60vh, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
 .section__cover__title {
     font-family: "Open Sans";
     font-weight: 800;
-    font-size: 72px;
+    font-size: clamp(28px, 8vw, 72px);
     color: #FFFFFF;
+    line-height: 1.1;
+    margin: 0;
 }
 
 .section__cover__description {
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin: clamp(12px, 2vw, 16px) 0 clamp(20px, 3vw, 32px) 0;
     font-family: 'Raleway';
     font-weight: 500;
-    font-size: 24px;
+    font-size: clamp(14px, 3vw, 24px);
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
+    line-height: 1.4;
+}
+
+@media (max-width: 320px) {
+    .section__cover {
+        margin: 0 12px;
+        border-radius: 8px;
+    }
 }

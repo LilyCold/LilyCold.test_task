@@ -42,7 +42,4 @@ $this->setFrameMode(true);
 				<p class="section__implantation__guarantee__description">Мы обеспечим надежность и долговечность каждого проведенного лечения.</p>
 			</section>
         </section>
-
-        <!-- <img class="main__button_icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow.svg" alt=""> -->
-
 <?php endif; ?>

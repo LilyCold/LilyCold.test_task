@@ -20,20 +20,20 @@ $this->setFrameMode(true);
 				<h6 class="section__specialists__info__title">Новости</h6>
             	<p class="section__specialists__info__description">В нашем разделе "Новости" мы делимся актуальной информацией о нашей клинике, новых<br>услугах и мероприятиях. Следите за обновлениями, чтобы не пропустить важные события!</p>
 			</div>
-			<button class="section__implantation__info__button" id="button__specialists">Смотреть все
-				<div class="section__implantation__info__button__arrow" alt=""></div>
-			</button>
+			<button class="section__implantation__info__button">Смотреть все
+				<div class="section__implantation__info__button__arrow" alt="">
+            </button>
         </section>
 
-        <section class="section__promotion__list" id="specialists__list">
-            <div class="section__promotion__list__container">
+        <section class="section__news__list">
+            <div class="section__news__list__container">
                 <?php foreach($arResult["ITEMS"] as $arItem): ?>
                     <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
-                        <article class="section__promotion__list__element" id="specialists__list__element">
-                            <img class="section__promotion__list__element__image" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"]; ?>">
-                            <h6 class="section__promotion__list__element__title" id="news__list__element__title"><?= isset($arItem["NAME"]) ? $arItem["NAME"] : ""; ?></h6>
-                            <p class="section__promotion__list__element__description"><?= isset($arItem["PREVIEW_TEXT"]) ? $arItem["PREVIEW_TEXT"] : ""; ?></p>
-                            <a class="section__promotion__list__element__link" id="specialists__list__element__link" href="#"><?= isset($arItem["DETAIL_TEXT"]) ? $arItem["DETAIL_TEXT"] : ""; ?></a>
+                        <article class="section__news__list__element">
+                            <img class="section__news__list__element__image" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"]; ?>">
+                            <h6 class="section__news__list__element__title"><?= isset($arItem["NAME"]) ? $arItem["NAME"] : ""; ?></h6>
+                            <p class="section__news__list__element__description"><?= isset($arItem["PREVIEW_TEXT"]) ? $arItem["PREVIEW_TEXT"] : ""; ?></p>
+                            <a class="section__news__list__element__link" href="#"><?= isset($arItem["DETAIL_TEXT"]) ? $arItem["DETAIL_TEXT"] : ""; ?></a>
                         </article>
                     <?php endif; ?>
                 <?php endforeach; ?>

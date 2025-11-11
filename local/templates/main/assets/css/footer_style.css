@@ -240,3 +240,123 @@
     position: relative;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 1024px) {
+    .section__form {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 48px;
+    }
+
+    .section__form__input,
+    .section__form__textarea {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .form__banner {
+        margin-top: 32px;
+        width: 100%;
+        border-radius: 0 0 24px 24px;
+    }
+
+    #white__button {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section__form__title {
+        font-size: 20px;
+    }
+
+    .section__form__input,
+    .section__form__textarea {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .section__form__checkbox {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkmark {
+        width: 32px;
+        height: 32px;
+    }
+
+    #white__button {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__top {
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px; 
+    }
+
+    .footer__top__images__map {
+        margin-left: 24px;
+        margin-top: 0;
+    }
+
+    .footer__top__navigation {
+        flex-direction: column;
+    }
+
+    .footer__top__navigation__list:last-of-type {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .footer__top__contacts__buttons {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .footer__top__contacts__buttons__icons {
+        margin-left: 0;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 24px;
+    }
+
+    .footer__top__images__map {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer__top__contacts__list__element {
+        flex-direction: column;
+    }
+
+    .footer__top__contacts__list__element__title {
+        margin-bottom: 4px;
+    }
+
+    .footer__bottom__copyright {
+        font-size: 12px;
+    }
+}

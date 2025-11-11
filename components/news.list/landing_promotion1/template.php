@@ -23,10 +23,10 @@ $this->setFrameMode(true);
         </section>
 
         <section class="section__promotion__list">
-            <div class="section__promotion__list__container">
+            <div class="section__promotion__list__container slider-container">
                 <?php foreach($arResult["ITEMS"] as $arItem): ?>
                     <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
-                        <article class="section__promotion__list__element">
+                        <article class="section__promotion__list__element slider-slide">
                             <img class="section__promotion__list__element__image" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"]; ?>">
                             <h6 class="section__promotion__list__element__title"><?= isset($arItem["NAME"]) ? $arItem["NAME"] : ""; ?></h6>
                             <p class="section__promotion__list__element__description"><?= isset($arItem["PREVIEW_TEXT"]) ? $arItem["PREVIEW_TEXT"] : ""; ?></p>
@@ -37,10 +37,10 @@ $this->setFrameMode(true);
             </div>
 
             <div class="section__promotion__buttons__container">
-                <button class="button__arrow">
+                <button class="button__arrow slider-prev">
                     <img class="button__left__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow_left.svg" alt="">
                 </button>
-                <button class="button__arrow">
+                <button class="button__arrow slider-next">
                     <img class="button__right__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow_right.svg" alt="">
                 </button>
             </div>

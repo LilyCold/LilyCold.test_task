@@ -1,6 +1,8 @@
 .section__reviews {
     max-width: 1312px;
     margin: 100px auto 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section__reviews__info {
@@ -17,11 +19,15 @@
 
 #reviews__list__container {
     max-height: 217px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 #reviews__list__element {
     background: #F4F8FC;
     max-height: 217px;
+    border-radius: 24px;
 }
 
 #reviews__list__element:hover {
@@ -44,12 +50,20 @@
     font-size: 16px;
     line-height: 110%;
     letter-spacing: 0%;
+    margin: 0 24px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #373737;
 }
 
 #reviews__list__element__description {
     font-size: 14px;
     line-height: 110%;
     letter-spacing: 0%;
+    margin: 8px 24px 24px 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    color: #373737;
 }
 
 .section__promotion__list__gradelist {
@@ -63,8 +77,8 @@
     background: #F4F8FC;
     border-radius: 24px;
     padding: 24px;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -79,10 +93,10 @@
 }
 
 .section__promotion__list__gradelist__element__icon {
-    width: auto; 
-    height: auto; 
-    max-width: 100%; 
-    flex-shrink: 0; 
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    flex-shrink: 0;
     align-self: flex-start;
 }
 
@@ -97,4 +111,224 @@
 
 .section__promotion__list__gradelist__element__stars {
     margin-left: 14px;
+}
+
+@media (max-width: 1352px) {
+    .section__reviews {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section__reviews {
+        padding: 0 16px;
+    }
+    
+    .section__reviews__info {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    #button_reviews {
+        align-self: flex-start;
+    }
+    
+    .section__promotion__list__gradelist {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section__promotion__title,
+    .section__promotion__description,
+    #button_reviews {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #button_reviews {
+        display: flex;
+        width: 247px;
+    }
+
+    .reviews__video__icon {
+    width: 100%;
+    }
+
+    .section__reviews {
+        margin-top: 80px;
+    }
+    
+    #reviews__list__container {
+        grid-template-columns: 1fr;
+        max-height: none;
+        gap: 16px;
+    }
+    
+    #reviews__list__element {
+        max-height: none;
+    }
+    
+    .section__promotion__list__gradelist {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .section__promotion__list__gradelist__element {
+        padding: 20px;
+    }
+    
+    .section__promotion__list__gradelist__element__grade {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__reviews {
+        margin-top: 60px;
+        padding: 0 12px;
+    }
+    
+    #reviews__list {
+        margin-top: 20px;
+    }
+    
+    .reviews__list__element__date {
+        margin: 20px 20px 8px 20px;
+        font-size: 15px;
+    }
+    
+    #reviews__list__element__title {
+        margin: 0 20px;
+        font-size: 15px;
+    }
+    
+    #reviews__list__element__description {
+        margin: 8px 20px 20px 20px;
+        font-size: 13px;
+    }
+    
+    .section__promotion__list__gradelist {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .section__promotion__list__gradelist__element {
+        padding: 16px;
+        border-radius: 20px;
+    }
+    
+    .section__promotion__list__gradelist__element__grade {
+        font-size: 24px;
+    }
+    
+    .section__promotion__list__gradelist__element__stars {
+        margin-left: 12px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section__reviews {
+        margin-top: 40px;
+        padding: 0 8px;
+    }
+    
+    #reviews__list__container {
+        gap: 12px;
+    }
+    
+    #reviews__list__element {
+        border-radius: 20px;
+    }
+    
+    .reviews__list__element__date {
+        margin: 16px 16px 8px 16px;
+        font-size: 14px;
+    }
+    
+    #reviews__list__element__title {
+        margin: 0 16px;
+        font-size: 14px;
+    }
+    
+    #reviews__list__element__description {
+        margin: 8px 16px 16px 16px;
+        font-size: 12px;
+    }
+    
+    .section__promotion__list__gradelist {
+        margin-top: 16px;
+        gap: 8px;
+    }
+    
+    .section__promotion__list__gradelist__element {
+        padding: 12px;
+        border-radius: 16px;
+    }
+    
+    .section__promotion__list__gradelist__element__container {
+        margin-top: 12px;
+    }
+    
+    .section__promotion__list__gradelist__element__grade {
+        font-size: 20px;
+    }
+    
+    .section__promotion__list__gradelist__element__stars {
+        margin-left: 8px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section__reviews {
+        margin-top: 32px;
+        padding: 0 4px;
+    }
+    
+    #reviews__list__container {
+        gap: 8px;
+    }
+    
+    #reviews__list__element {
+        border-radius: 16px;
+    }
+    
+    .reviews__list__element__date {
+        margin: 12px 12px 6px 12px;
+        font-size: 13px;
+    }
+    
+    #reviews__list__element__title {
+        margin: 0 12px;
+        font-size: 13px;
+    }
+    
+    #reviews__list__element__description {
+        margin: 6px 12px 12px 12px;
+        font-size: 11px;
+    }
+    
+    .section__promotion__list__gradelist {
+        margin-top: 12px;
+    }
+    
+    .section__promotion__list__gradelist__element {
+        padding: 10px;
+    }
+    
+    .section__promotion__list__gradelist__element__grade {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section__reviews {
+        max-width: 1312px;
+    }
 }

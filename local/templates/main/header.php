@@ -9,7 +9,7 @@ use Bitrix\Main\Page\Asset
 	<head>
 		
 		<title>Олимп</title>
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
 		<?php 
 			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/header_style.css");
@@ -24,6 +24,8 @@ use Bitrix\Main\Page\Asset
 			Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/news_style.css");
 
 			Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/scripts/burgerMenuShowScript.js");
+			Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/scripts/promotionSlider.js");
+			Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/scripts/specialistsSlider.js");
 
 			Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.googleapis.com">');
 			Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
@@ -70,6 +72,11 @@ use Bitrix\Main\Page\Asset
 				<img class="contacts__iconVisualyImpaired" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/VisuallyImpairedIcon.svg" alt="">
 			</section>
 			<section class="header__menu">
+				<button class="mobile-menu-toggle" style="display: none;">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 				<nav class="header__menu__navigation">
 					<a class="header__menu__navigation__link" href="#">Главная</a>
 					<a class="header__menu__navigation__link" href="#">О нас
@@ -94,8 +101,10 @@ use Bitrix\Main\Page\Asset
 					<a class="header__menu__navigation__link" href="#">Контакты</a>
 					<a class="header__menu__navigation__link" href="#">Вакансии</a>
 				</nav>
-				<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ph_telegram-logo.svg" alt="">
-				<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ic_baseline-whatsapp.svg" alt="">
+				<div class="header__menu__icons">
+					<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ph_telegram-logo.svg" alt="">
+					<img class="header__menu__icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/ic_baseline-whatsapp.svg" alt="">
+				</div>
 				<button class="main__button">
 					Запись на прием
 					<img class="main__button_icon" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/button_arrow.svg" alt="">
